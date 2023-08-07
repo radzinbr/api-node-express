@@ -26,7 +26,7 @@ Lista todas as branches (ramificações) do repositório e indica a branch atual
 
 ## git pull 
 
-pra puxar as atualizaçoes do meu repositorio
+pra puxar as atualizaçoes pro meu  repositorio
 
 ## git fetch  
 
