@@ -24,3 +24,6 @@ se usa pra commitar com uma mensagem
 ## git branch
 Lista todas as branches (ramificações) do repositório e indica a branch atual com um asterisco.
 
+## git pull 
+
+pra puxar as atualizaçoes do meu repositorio 
