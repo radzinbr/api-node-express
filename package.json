@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "projeto de api pro 3 modulo do IFSP ",
   "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "git": "git pull ",
-    "nata": "echo nata da a bunda",
+    "git-rec": "git pull",
     "node": "nodemon"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/radzinbr/api-node-express.git"
   },
-  "keywords": [
+  "keywordss": [
     "api",
     "node",
     "projeto",
