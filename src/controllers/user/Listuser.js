@@ -1,7 +1,7 @@
 import user from '../../models/userModels.js'
 
 
-const getUser = async (req, res) => {
+const listUser = async (req, res) => {
     try {
         const userData = req.body
         const [rows] = await user.getById(userData.id)
@@ -11,8 +11,8 @@ const getUser = async (req, res) => {
             })
         }else {
             res.json({
-                success:"usuario encontrado com sucesso",
-                user:rows[0]
+                success:"usuarios encontrado com sucesso",
+                user:rows
             })
         }
     } catch(error){
@@ -21,4 +21,4 @@ const getUser = async (req, res) => {
     }
 }
 
-export default getUser;
+export default listUser;

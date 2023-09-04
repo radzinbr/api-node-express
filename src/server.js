@@ -20,5 +20,5 @@ api.use('/products',productRouter);
 api.use('/user',userRouter);
 //inicializa o servidor na porta 3000
 api.listen(PORT, () => {
-    console.log(`servidor falhou.... kkk zuera porra ta rodando kkkkk http://localhost:${PORT}`)
+    console.log(`servidor falhou.... kkk zuera ta rodando kkkkk http://localhost:${PORT}`)
 }) 
