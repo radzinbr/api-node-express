@@ -1,9 +1,11 @@
 import user from "../../models/userModels.js";
 
+//insert user
+
 const Toupdate = async (req, res) => {
     try {
         const userData = req.body
-        const [result] = await user.update(userData)
+        const [result] = await user.Update(userData)
         if (result.affectedRows === 1) {
             res.json({
                 success: "usuario atualizado  com sucesso",
