@@ -11,6 +11,14 @@ const create = async (prod) => {
     );
 }
 
+const Update = async (prod) => {
+    const {id, name_produto, preco,} = prod
+    return await db.query(
+        "UPDATE produtos SET name_produto = ?, preco = ? WHERE id = ?",[name_produto,preco,id]
+    )
+}
+
+
 const Del = async (id)=>{
     return await db.query("DELETE FROM produtos WHERE id = ?",[id])
 }
@@ -19,4 +27,4 @@ const ListallP = async () => {
     return await db.query("SELECT * from produtos ")
 }
 
-export default { ProductById, create, ListallP,Del};
+export default { ProductById, create, ListallP,Del,Update};
